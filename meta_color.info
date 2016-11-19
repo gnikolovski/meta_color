@@ -1,0 +1,5 @@
+name = Meta color
+description = "Set the toolbar color for Chrome web browser on mobile devices."
+package = Custom
+core = 7.x
+configure = admin/config/system/meta-color

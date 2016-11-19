@@ -1,0 +1,53 @@
+<?php
+
+function meta_color_permission() {
+  return array(
+    'access meta color module' => array(
+      'title' => t('Meta color module'),
+      'description' => t('Meta color module'),
+    ),
+  );
+}
+
+
+function meta_color_menu() {
+  $items = array();
+  $items['admin/config/system/meta-color'] = array(
+    'title' => t('Meta color'),
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('meta_color_settings'),
+    'access arguments' => array('access meta color module'),
+    'description' => t('Set the toolbar color for Chrome web browser on mobile devices.'),
+    'type' => MENU_NORMAL_ITEM,
+  );
+  return $items;
+}
+
+function meta_color_settings() {
+  $form = array();
+  $form['meta_color'] = array(
+    '#type' => 'fieldset',
+    '#collapsible' => TRUE,
+    '#collapsed' => FALSE,
+  );
+  $form['meta_color']['meta_theme_color'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Hex color'),
+    '#default_value' => variable_get('meta_color', ''),
+    '#description' => t('Set your toolbar color.'),
+  );
+  return system_settings_form($form); 
+}
+
+function meta_color_preprocess_html(&$vars) {
+  $color = variable_get('meta_theme_color', '');
+  $theme_color_meta = array(
+    '#type' => 'html_tag',
+    '#tag' => 'meta',
+    '#attributes' => array(
+      'name' => 'theme-color',
+      'content' => $color,
+    )
+  );
+  drupal_add_html_head($theme_color_meta, 'theme_color_meta');
+}
