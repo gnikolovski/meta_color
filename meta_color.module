@@ -9,7 +9,6 @@ function meta_color_permission() {
   );
 }
 
-
 function meta_color_menu() {
   $items = array();
   $items['admin/config/system/meta-color'] = array(
