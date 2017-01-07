@@ -32,10 +32,10 @@ function meta_color_settings() {
   $form['meta_color']['meta_theme_color'] = array(
     '#type' => 'textfield',
     '#title' => t('Hex color'),
-    '#default_value' => variable_get('meta_color', ''),
+    '#default_value' => variable_get('meta_theme_color', ''),
     '#description' => t('Set your toolbar color.'),
   );
-  return system_settings_form($form); 
+  return system_settings_form($form);
 }
 
 function meta_color_preprocess_html(&$vars) {
