@@ -1,0 +1,5 @@
+<?php
+
+function meta_color_uninstall() {
+  variable_del('meta_theme_color');
+}
