@@ -1,5 +1,5 @@
 {
-  "name": "gnikolovski/meta-color",
+  "name": "gnikolovski/meta_color",
   "description": "Add theme-color metatag to your Drupal 7 website.",
   "type": "drupal-module",
   "homepage": "https://github.com/gnikolovski/meta_color",
