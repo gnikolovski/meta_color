@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * Implements hook_uninstall().
+ *
+ * Remove variable that the module have set.
+ */
 function meta_color_uninstall() {
   variable_del('meta_theme_color');
 }
