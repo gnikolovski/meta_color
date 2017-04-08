@@ -1,4 +1,4 @@
-name = Meta color
+name = Meta Color
 description = "Set the toolbar color for Chrome web browser on mobile devices."
 package = Custom
 core = 7.x
