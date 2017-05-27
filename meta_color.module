@@ -17,11 +17,11 @@ function meta_color_permission() {
 function meta_color_menu() {
   $items = array();
   $items['admin/config/system/meta-color'] = array(
-    'title' => t('Meta color'),
+    'title' => 'Meta color',
     'page callback' => 'drupal_get_form',
     'page arguments' => array('meta_color_settings'),
     'access arguments' => array('administer meta color module'),
-    'description' => t('Set the toolbar color for Chrome web browser on mobile devices.'),
+    'description' => 'Set the toolbar color for Chrome web browser on mobile devices.',
     'type' => MENU_NORMAL_ITEM,
   );
   return $items;

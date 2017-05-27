@@ -1,6 +1,6 @@
 # Meta Color
 
-This is a simple Drupal 7 module, which adds theme-color metatag to your pages.
+This is a simple Drupal 7 module, which adds theme-color meta tag to your pages.
 Theme color tag is responsible for setting the toolbar color for Chrome web
 browser on mobile devices.
 
