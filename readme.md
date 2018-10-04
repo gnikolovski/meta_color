@@ -13,7 +13,7 @@ your color in the Hex format (for example: #ffa500).
 
 Goran Nikolovski  
 Website: http://gorannikolovski.com  
-Drupal: https://www.drupal.org/user/3451979  
+Drupal: https://www.drupal.org/u/gnikolovski  
 Email: nikolovski84@gmail.com  
 
 Company: Studio Present, Subotica, Serbia  
